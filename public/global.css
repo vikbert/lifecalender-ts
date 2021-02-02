@@ -8,3 +8,9 @@
   margin: 1px;
   float: left;
 }
+.is-past {
+  background-color: rgba(247, 155, 122, 0.671);
+}
+.is-current {
+  background-color: rgb(250, 74, 10);
+}

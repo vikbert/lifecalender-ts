@@ -6,7 +6,7 @@
   let birthday: string = '1970-01-01';
   let age: number = 85;
 
-  const init = () => {
+  const configCalender = () => {
     const config = new Config(birthday, age);
 
     if (config.isValid()) {
@@ -66,7 +66,7 @@
               type="submit"
               class="is-primary is-rounded"
               value="submit"
-              on:click={init}
+              on:click={configCalender}
             />
           </fieldset>
         </form>

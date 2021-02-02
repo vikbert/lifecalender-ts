@@ -1,17 +1,18 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import store from 'store';
   import Header from './Header.svelte';
-  import Day from './Day.svelte';
-  import Login from './CalenderInit.svelte';
-  const items: number[] = Array.from(Array(36500).keys());
+  import Login from './ConfigForm.svelte';
+  import CalenderGrid from './CalenderGrid.svelte';
+
+  const calender = store.get('life_calender');
 </script>
 
-{#if true}
-  <Login />
-{:else}
+{#if calender && calender.config}
   <Header />
   <main class="main">
-    {#each items as item}
-      <Day />
-    {/each}
+    <CalenderGrid />
   </main>
+{:else}
+  <Login />
 {/if}
