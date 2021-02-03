@@ -14,6 +14,7 @@
     calender.initWeekAmount();
 
     store.set('life_calender', calender);
+    location.reload();
   };
 </script>
 

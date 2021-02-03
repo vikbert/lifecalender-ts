@@ -10,7 +10,7 @@
 {#if calender && calender.weekAmount > 0}
   <Header />
   <main class="main">
-    <CalenderGrid weekAmount={calender.weekAmount}/>
+    <CalenderGrid {calender}/>
   </main>
 {:else}
   <CalenderForm />

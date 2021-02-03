@@ -14,9 +14,9 @@ html {
   display: table;
   padding-bottom: 40px;
 }
-.day {
-  width: 5px;
-  height: 5px;
+.week {
+  width: 10px;
+  height: 10px;
   background: rgb(5, 238, 36);
   margin: 1px;
   float: left;
@@ -24,7 +24,7 @@ html {
 }
 
 .is-past {
-  background-color: #dba672;
+  background-color: #8d6b47;
 }
 
 .is-current {
