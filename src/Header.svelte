@@ -1,19 +1,19 @@
 <script lang="ts">
-  let src = './logo.png';
+  import Logo from './Logo.svelte';
 </script>
 
 <header class="header">
   <nav class="topbar space-between">
     <div />
     <div class="logo">
-      <img {src} alt="logo" class="logo" />
+      <Logo width={120}/>
     </div>
     <div class="faq">
       <span
-      class="iconify"
-      data-icon="fluent:chat-bubbles-question-20-filled"
-      data-inline="false"
-    />
+        class="iconify"
+        data-icon="fluent:chat-bubbles-question-20-filled"
+        data-inline="false"
+      />
     </div>
   </nav>
 </header>

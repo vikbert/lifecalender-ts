@@ -7,20 +7,24 @@ html {
 }
 .main {
   padding: 8px 6px 8px 8px;
-  height: 100vh;
-  outline: 1px solid orangered;
+  background-color: white;
 }
 
+.calender {
+  display: table;
+  padding-bottom: 40px;
+}
 .day {
   width: 5px;
   height: 5px;
-  background: #ccc;
+  background: rgb(5, 238, 36);
   margin: 1px;
   float: left;
+  outline: 1px solid rgb(248, 246, 246);
 }
 
 .is-past {
-  background-color: #fb9b38;
+  background-color: #dba672;
 }
 
 .is-current {

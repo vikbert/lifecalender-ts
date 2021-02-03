@@ -1,17 +1,17 @@
 <script lang="ts">
-    import store from 'store';
-    import CalenderGrid from './CalenderGrid.svelte';
-    import Login from './ConfigForm.svelte';
-    import Header from './Header.svelte';
+  import store from 'store';
+  import CalenderGrid from './CalenderGrid.svelte';
+  import CalenderForm from './CalenderForm.svelte';
+  import Header from './Header.svelte';
 
-    const calender = store.get('life_calender');
+  let calender: any = store.get('life_calender');
 </script>
 
-{#if calender && calender.config}
-    <Header/>
-    <main class="main">
-        <CalenderGrid/>
-    </main>
+{#if calender && calender.weekAmount > 0}
+  <Header />
+  <main class="main">
+    <CalenderGrid weekAmount={calender.weekAmount}/>
+  </main>
 {:else}
-    <Login/>
+  <CalenderForm />
 {/if}

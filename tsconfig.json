@@ -1,6 +1,10 @@
 {
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "isolatedModules": false,
+  },
   "extends": "@tsconfig/svelte/tsconfig.json",
 
   "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*", "**/*.spec.ts"]
 }

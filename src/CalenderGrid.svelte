@@ -1,17 +1,13 @@
 <script lang="ts">
-    import store from 'store';
-    import {onMount} from 'svelte';
-    import Day from './Day.svelte';
+  export let weekAmount: number = 0;
+  let weekIndexes = [];
 
-    let dates = {};
-
-    onMount(async () => {
-        const calender = store.get('life_calender');
-        ({dates} = calender);
-    });
+  $: weekIndexes = Array.from(Array(weekAmount).keys());
 
 </script>
 
-{#each Object.keys(dates) as key}
-    <Day info={dates[key]} />
-{/each}
+<div class="calender">
+  {#each weekIndexes as index}
+      <span class={'day'} />
+  {/each}
+</div>
