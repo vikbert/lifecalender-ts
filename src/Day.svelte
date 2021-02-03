@@ -1,6 +1,8 @@
 <script lang="ts">
-  import type Day from './models/Day';
-  export let day: Day;
+    import type DayInfo from './models/DayInfo';
+
+    export let info: DayInfo;
+    export let tooltip = false;
 </script>
 
-<div class="day" class:is-past={day.isPast} class:is-current={day.isCurrent}/>
+<span class="day" class:is-past={info.isPast} class:is-current={info.isCurrent} data-tooltip={false}></span>

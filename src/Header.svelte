@@ -8,11 +8,13 @@
     <div class="logo">
       <img {src} alt="logo" class="logo" />
     </div>
-    <span
-      class="iconify faq"
+    <div class="faq">
+      <span
+      class="iconify"
       data-icon="fluent:chat-bubbles-question-20-filled"
       data-inline="false"
     />
+    </div>
   </nav>
 </header>
 

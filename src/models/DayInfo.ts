@@ -1,7 +1,7 @@
-interface Day
+interface DayInfo
 {
   isPast: boolean;
   isCurrent: boolean;
 }
 
-export default Day;
+export default DayInfo;

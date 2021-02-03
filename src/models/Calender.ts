@@ -1,13 +1,13 @@
 import moment from 'moment';
 import { getDates } from '../services/Dates';
-import type Config from './Config';
+import type CalenderConfig from './CalenderConfig';
 
 class Calender {
-  config: Config;
+  config: CalenderConfig;
   dates: string[] = [];
   currentDate: string = moment().startOf('day').format('YYYY-MM-DD');
 
-  constructor(config: Config) {
+  constructor(config: CalenderConfig) {
     this.config = config;
   }
 

@@ -1,6 +1,6 @@
 import moment from 'moment'
 
-class Config{
+export default class CalenderConfig {
   birthday: string;
   age: number;
 
@@ -24,5 +24,3 @@ class Config{
     return 0 < ageByBirthday && ageByBirthday < 100;
   }
 }
-
-export default Config;
