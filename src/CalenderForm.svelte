@@ -59,20 +59,6 @@
           </fieldset>
         </div>
         <div class="container">
-          <fieldset>
-            <label
-              >Enter the Age you might live
-              <input
-                type="number"
-                name="name"
-                bind:value={age}
-                min="50"
-                max="100"
-              />
-            </label>
-          </fieldset>
-        </div>
-        <div class="container">
           <fieldset class="text-centered">
             <button
               type="submit"

@@ -17,9 +17,9 @@
 <div class="calender">
   {#each weekIndexes as index}
     {#if index < currentIndex}
-      <span class="week is-past" />
+      <div class="week is-past centered-xy">✗</div>
     {:else if index === currentIndex}
-      <span class="week is-current" />
+      <span class="week is-current"></span>
     {:else}
       <span class="week" />
     {/if}
