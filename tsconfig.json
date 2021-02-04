@@ -1,9 +1,12 @@
 {
-  "compilerOptions": {
-    "types": ["node", "jest"],
-    "isolatedModules": false,
-  },
   "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "module": "es2015",
+    "types": ["node", "jest", "store"],
+    "typeRoots": ["./node_modules/@types"],
+    "moduleResolution": "node",
+    "isolatedModules": false
+  },
 
   "include": ["src/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*", "**/*.spec.ts"]
