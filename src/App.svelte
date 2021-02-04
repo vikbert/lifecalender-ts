@@ -2,6 +2,7 @@
   import store from 'store';
   import CalenderGrid from './CalenderGrid.svelte';
   import CalenderForm from './CalenderForm.svelte';
+  import CalenderInfo from './CalenderInfo.svelte';
   import Header from './Header.svelte';
 
   let calender: any = store.get('life_calender');
@@ -11,6 +12,7 @@
   <Header />
   <main class="main">
     <CalenderGrid {calender}/>
+    <CalenderInfo/>
   </main>
 {:else}
   <CalenderForm />
