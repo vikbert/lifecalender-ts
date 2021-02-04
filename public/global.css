@@ -5,6 +5,9 @@ html {
   padding: 0px;
   overflow-x: hidden;
 }
+.overlay {
+  left: 0;
+}
 .main {
   padding: 8px 6px 8px 8px;
   background-color: white;

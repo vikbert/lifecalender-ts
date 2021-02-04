@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Faq from './Faq.svelte';
   import Logo from './Logo.svelte';
 </script>
 
@@ -6,14 +7,10 @@
   <nav class="topbar space-between">
     <div />
     <div class="logo">
-      <Logo width={120}/>
+      <Logo width={120} />
     </div>
     <div class="faq">
-      <span
-        class="iconify"
-        data-icon="fluent:chat-bubbles-question-20-filled"
-        data-inline="false"
-      />
+      <Faq />
     </div>
   </nav>
 </header>

@@ -22,7 +22,7 @@
     </div>
     <div class="content">
       <p>
-        That's one box for every week of a 90-year life. That's not that many
+        That's one box for every week of a <strong>90-year</strong> life. That's not that many
         boxes, especially since we've already used a bunch of those. So I think
         we need to all take a long hard look at that calender. We need to stay
         aware of the instant Gratification monkey. That's a job for all of us.
